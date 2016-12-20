@@ -22,6 +22,10 @@ class WordlessThemeBuilder {
     update_option('current_theme', $this->theme_name);
   }
 
+  public function upgrade_to_webpack() {
+    return null; // WIP
+  }
+
   private function copy($src, $dst) {
     $dir = opendir($src);
     $this->make_directory($dst);
